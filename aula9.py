@@ -32,15 +32,19 @@ def media_notas(nome_arquivo):
         print(media(lista_notas))
     return lista_media
 
-def copia_arquivo(nome_arquivo) :
+def copia_arquivo(nome_arquivo):
     import shutil
     shutil.copy(nome_arquivo,'C:/projetos/pythonFundamentos/')
 
+def move_arquivo(nome_arquivo):
+    import shutil
+    shutil.move(nome_arquivo,'C:/projetos/pythonFundamentos/')
 
-lista_media = media_notas('notas.txt')
-print(lista_media)
-
-copia_arquivo('notas.txt')
+#
+# lista_media = media_notas('notas.txt')
+# print(lista_media)
+#
+# move_arquivo('notas.txt')
 #
 # aluno='Cezar,10,10,6,7\n'
 # atualizar_arquivo('notas.txt',aluno)
@@ -49,5 +53,8 @@ copia_arquivo('notas.txt')
 # escrever_arquivo('primeira linha\n')
 # atualizar_arquivo('segunda linha\n')
 # ler_arquivo('teste.txt')
+
+resultado = 'João programa em Python, Java, PHP e Ruby'.split('*')
+print(resultado)
 
 
